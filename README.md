@@ -19,6 +19,10 @@ profiles describe roles in the domain; the synthetic respondents are LLM persona
 respondents are university researchers with experience in the domain, not staff of the institution
 whose roles the profiles describe.
 
+> **Interviews with human respondents are not published in this repository.** They were left out on
+> purpose: only the responses of the six synthetic personas are included, under
+> `construction/especificacao/respostas-asd/`.
+
 ## Contents
 
 | Path | What it is |
@@ -94,7 +98,7 @@ print(len(g))  # 4540
 
 ## What is not here
 
-- The interviews given by human respondents.
+- The interviews given by human respondents (see the note at the top of this page).
 - The judicial documents and the knowledge graph used in the external evaluation described in the
   paper. They are real case files and cannot be shared.
 - The code of the knowledge-graph pipeline (available from the corresponding author on request).
