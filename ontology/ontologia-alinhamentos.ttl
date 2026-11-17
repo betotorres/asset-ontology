@@ -1,0 +1,719 @@
+@prefix rec: <https://www.latitude.unb.br/ontologia/recuperacao-ativos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://www.latitude.unb.br/ontologia/recuperacao-ativos-alinhamentos> a owl:Ontology ;
+  owl:imports <https://www.latitude.unb.br/ontologia/recuperacao-ativos> , <http://xmlns.com/foaf/0.1/> , <http://www.w3.org/ns/org#> , <http://www.w3.org/ns/prov#> , <http://www.w3.org/ns/regorg#> ;
+  dcterms:title "Ontologia do domínio recuperacao-ativos — módulo de alinhamento"@pt-BR ;
+  dcterms:description "Módulo de alinhamento (EOA/OCO): importa o núcleo e declara o reuso de ontologias externas (FIBO, FOAF, FTM, ORG, PROV-O, REGORG, schema), a tipagem PROV-O e as origens de desenho."@pt-BR ;
+  dcterms:created "2026-10-06" ;
+  owl:versionInfo "0.2.0-oco" ;
+  rdfs:comment "Versões das ontologias reusadas: ACO (desenho); FIBO (owl) master/latest (2026Q1); FOAF (owl) 0.99; FTM (skos) v4.11.0; ORG (owl) W3C Recommendation 2014-01-16; PROV-O (owl) W3C Recommendation 2013-04-30; REGORG (owl) W3C Working Group Note 2013-08-01; schema (owl) latest; SUMO (desenho)."@pt-BR .
+
+# --- Propriedades de anotação do alinhamento
+rec:origemDeDesenho a owl:AnnotationProperty ; rdfs:label "origem de desenho"@pt-BR ; rdfs:comment "Conceito de ontologia sem IRI OWL utilizável (ACO, SUMO) que serviu de referência de modelagem — registro de reuso sem axioma."@pt-BR .
+rec:referenciaExternaNaoResolvida a owl:AnnotationProperty ; rdfs:label "referência externa não resolvida"@pt-BR ; rdfs:comment "Correspondência decidida no EOA cuja IRI não pôde ser confirmada na fonte; fica como texto até resolução."@pt-BR .
+
+# --- Alinhamento de classes
+rec:Aeronave
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): Aircraft" ;
+  skos:exactMatch <https://schema.followthemoney.tech/#Airplane> .
+
+rec:Agente
+  rdfs:subClassOf prov:Agent .
+
+rec:Alegacao
+  rdfs:subClassOf prov:Entity ;
+  rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Claim> .
+
+rec:AlegacaoDeTerceiroDeBoaFe
+  rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Claim> .
+
+rec:AlienacaoAntecipada
+  rdfs:subClassOf prov:Entity .
+
+rec:AnaliseDeCompatibilidadeEconomica
+  rdfs:subClassOf prov:Activity .
+
+rec:AreaDeExecucaoOperacional
+  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationalUnit> .
+
+rec:AssercaoDeTitularidade
+  skos:broadMatch <https://schema.followthemoney.tech/#Ownership> .
+
+rec:Ativo
+  rdfs:subClassOf prov:Entity ;
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): Asset" ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Asset> ;
+  rec:origemDeDesenho "SUMO: FinancialAsset" .
+
+rec:AtivoDePropriedadeIntelectual
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): IntelectualProperty" ;
+  rec:origemDeDesenho "SUMO: Patent" .
+
+rec:AtivoFinanceiro
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): FinancialAsset" ;
+  skos:narrowMatch <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument> .
+
+rec:AtoNotarial
+  rdfs:subClassOf prov:Entity .
+
+rec:AtoNotarialOuRegistral
+  rdfs:subClassOf prov:Entity .
+
+rec:AtoRegistral
+  rdfs:subClassOf prov:Entity .
+
+rec:AtorInstitucional
+  rdfs:subClassOf prov:Agent ;
+  rdfs:subClassOf <http://www.w3.org/ns/org#Organization> .
+
+rec:Avaliacao
+  rdfs:subClassOf prov:Activity .
+
+rec:AvaliacaoPatrimonial
+  rdfs:subClassOf prov:Activity .
+
+rec:BemImovel
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): RealEstate" ;
+  skos:exactMatch <https://schema.followthemoney.tech/#RealEstate> ;
+  rec:origemDeDesenho "SUMO: RealEstate" .
+
+rec:CodigoPostal
+  rdfs:subClassOf prov:Entity ;
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): PostalCode" ;
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Postcode> .
+
+rec:ConsultaAFonte
+  rdfs:subClassOf prov:Activity .
+
+rec:ContaBancaria
+  rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/Account> ;
+  skos:exactMatch <https://schema.followthemoney.tech/#BankAccount> .
+
+rec:Contrato
+  rdfs:subClassOf prov:Entity ;
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Contract> ;
+  skos:narrowMatch <https://schema.followthemoney.tech/#Contract> .
+
+rec:Correspondencia
+  rdfs:subClassOf prov:Entity ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Message> .
+
+rec:Criptoativo
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): CryptoWallet" ;
+  skos:exactMatch <https://schema.followthemoney.tech/#CryptoWallet> .
+
+rec:DecisaoJudicial
+  rdfs:subClassOf prov:Entity .
+
+rec:DeclaracaoFiscalDeRendaEPatrimonio
+  rdfs:subClassOf prov:Entity ;
+  skos:exactMatch <https://schema.followthemoney.tech/#TaxRoll> .
+
+rec:DecretoDePerdimento
+  rdfs:subClassOf prov:Entity .
+
+rec:Destinacao
+  rdfs:subClassOf prov:Activity .
+
+rec:DispositivoNormativo
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation> .
+
+rec:Divida
+  rdfs:subClassOf prov:Entity ;
+  skos:exactMatch <https://schema.followthemoney.tech/#Debt> .
+
+rec:Documento
+  rdfs:subClassOf prov:Entity .
+
+rec:DocumentoDoPedido
+  rdfs:subClassOf prov:Entity ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Document> .
+
+rec:DossieDeBuscaPatrimonial
+  rdfs:subClassOf prov:Entity .
+
+rec:ElementoDeIdentificacaoDePessoa
+  rdfs:subClassOf prov:Entity .
+
+rec:ElementoNormativo
+  rdfs:subClassOf prov:Entity .
+
+rec:Embarcacao
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): Watercraft" ;
+  skos:exactMatch <https://schema.followthemoney.tech/#Vessel> .
+
+rec:Endereco
+  rdfs:subClassOf prov:Entity ;
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): PhysicalAddress" ;
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddress> ;
+  skos:closeMatch <https://schema.org/PostalAddress> .
+
+rec:EventoDeTramitacao
+  rdfs:subClassOf prov:Activity .
+
+rec:Exequatur
+  rdfs:subClassOf prov:Entity .
+
+rec:ExtratoDeMovimentacaoFinanceira
+  rdfs:subClassOf prov:Entity ;
+  rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountStatement> .
+
+rec:FatoCriminoso
+  rdfs:subClassOf prov:Activity .
+
+rec:IdentificadorDePessoa
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument> ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Identification> .
+
+rec:IncidenteDeRestituicao
+  rdfs:subClassOf prov:Activity .
+
+rec:IndicacaoDeBeneficiarioFinal
+  skos:broadMatch <https://schema.followthemoney.tech/#Control> .
+
+rec:Indicio
+  rdfs:subClassOf prov:Entity ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Risk> .
+
+rec:IndicioFinanceiro
+  rdfs:subClassOf prov:Entity .
+
+rec:InstituicaoFinanceira
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> .
+
+rec:Jurisdicao
+  rdfs:subClassOf prov:Agent ;
+  rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/Polity> ;
+  skos:closeMatch <https://schema.followthemoney.tech/#Territory> .
+
+rec:LancamentoFinanceiro
+  rdfs:subClassOf prov:Activity ;
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/IndividualTransaction> ;
+  skos:closeMatch <https://schema.followthemoney.tech/#Payment> ;
+  rec:origemDeDesenho "SUMO: FinancialTransaction" .
+
+rec:ListaRestritiva
+  rdfs:subClassOf prov:Entity .
+
+rec:MatriculaImobiliaria
+  rdfs:subClassOf prov:Entity .
+
+rec:MedidaDeConstricao
+  rdfs:subClassOf prov:Entity .
+
+rec:MedidaJudicialSobreAtivo
+  rdfs:subClassOf prov:Entity .
+
+rec:MotivoDeSaneamentoOuDevolucao
+  rdfs:subClassOf prov:Entity .
+
+rec:NexoCausal
+  rdfs:subClassOf prov:Entity .
+
+rec:NomeEVarianteDeGrafia
+  rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName> .
+
+rec:OrgaoDeRegistroPublico
+  skos:narrowMatch <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority> .
+
+rec:OrgaoJudicial
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/Judiciary> .
+
+rec:ParecerJuridico
+  rdfs:subClassOf prov:Entity .
+
+rec:ParticipacaoEmProcesso
+  skos:exactMatch <https://schema.followthemoney.tech/#CourtCaseParty> .
+
+rec:ParticipacaoSocietaria
+  skos:broadMatch <https://schema.followthemoney.tech/#Ownership> .
+
+rec:PedidoDeCooperacaoJuridicaInternacional
+  rdfs:subClassOf prov:Activity .
+
+rec:Pessoa
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): Party" ;
+  rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+  skos:broadMatch <https://schema.followthemoney.tech/#LegalEntity> ;
+  rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> .
+
+rec:PessoaFisica
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): Person" ;
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person> ;
+  owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Person> ;
+  rdfs:subClassOf <http://www.w3.org/ns/prov#Person> ;
+  rec:origemDeDesenho "SUMO: Human" ;
+  owl:equivalentClass <https://schema.org/Person> .
+
+rec:PessoaJuridica
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): Organization" ;
+  rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ;
+  skos:narrowMatch <https://schema.followthemoney.tech/#Company> ;
+  rdfs:subClassOf <http://www.w3.org/ns/org#FormalOrganization> ;
+  rdfs:subClassOf <http://www.w3.org/ns/prov#Organization> ;
+  owl:equivalentClass <http://www.w3.org/ns/regorg#RegisteredOrganization> ;
+  rec:origemDeDesenho "SUMO: Organization" ;
+  rdfs:subClassOf <https://schema.org/Organization> .
+
+rec:PrazoDeResposta
+  rdfs:subClassOf prov:Entity .
+
+rec:ProcessoJudicial
+  rdfs:subClassOf prov:Activity ;
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): LawSuit" ;
+  skos:exactMatch <https://schema.followthemoney.tech/#CourtCase> .
+
+rec:RedeDeCooperacaoInternacional
+  owl:equivalentClass <http://www.w3.org/ns/org#OrganizationalCollaboration> .
+
+rec:RegistroPublicoDeBem
+  rdfs:subClassOf prov:Entity .
+
+rec:RelacaoReificada
+  rdfs:subClassOf prov:Entity .
+
+rec:Repatriacao
+  rdfs:subClassOf prov:Activity .
+
+rec:RequisitoDeAdmissibilidade
+  rdfs:subClassOf prov:Entity .
+
+rec:RequisitoDeCooperacao
+  rdfs:subClassOf prov:Entity .
+
+rec:RequisitoFormal
+  rdfs:subClassOf prov:Entity .
+
+rec:RespostaDeCooperacao
+  rdfs:subClassOf prov:Entity .
+
+rec:RestricaoOuOnusSobreBem
+  rdfs:subClassOf prov:Entity .
+
+rec:SancaoIndividual
+  skos:exactMatch <https://schema.followthemoney.tech/#Sanction> .
+
+rec:SistemaDeInformacao
+  rdfs:subClassOf prov:Entity .
+
+rec:StatusProbatorio
+  rdfs:subClassOf prov:Entity .
+
+rec:SucessaoDeEntidade
+  skos:exactMatch <https://schema.followthemoney.tech/#Succession> ;
+  owl:equivalentClass <http://www.w3.org/ns/org#ChangeEvent> .
+
+rec:TaxaDeCambioHistorica
+  rdfs:subClassOf prov:Entity ;
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/ExchangeRate> .
+
+rec:UnidadeDeAssessoriaJuridica
+  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationalUnit> .
+
+rec:UnidadeDeBuscaPatrimonial
+  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationalUnit> .
+
+rec:UnidadeDeInteligenciaFinanceira
+  skos:broadMatch <https://schema.followthemoney.tech/#PublicBody> .
+
+rec:UnidadeOrganizacional
+  rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationalUnit> .
+
+rec:ValorEconomicoDeAtivo
+  rdfs:subClassOf prov:Entity ;
+  rdfs:subClassOf <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount> ;
+  rdfs:subClassOf <https://schema.org/MonetaryAmount> .
+
+rec:ValorMobiliario
+  owl:equivalentClass <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security> ;
+  skos:exactMatch <https://schema.followthemoney.tech/#Security> .
+
+rec:Veiculo
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): MotorVehicle" ;
+  skos:exactMatch <https://schema.followthemoney.tech/#Vehicle> .
+
+rec:ViaProcessual
+  rdfs:subClassOf prov:Entity .
+
+rec:VinculoDeParentesco
+  skos:exactMatch <https://schema.followthemoney.tech/#Family> .
+
+rec:VinculoDeRepresentacao
+  skos:exactMatch <https://schema.followthemoney.tech/#Representation> .
+
+rec:VinculoEntrePessoas
+  skos:narrowMatch <https://schema.followthemoney.tech/#Associate> .
+
+# --- Alinhamento de propriedades
+rec:administra
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/holds> .
+
+rec:afeta
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/involves> .
+
+rec:analisa_UnidadeDeAssessoriaJuridica
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/evaluates> .
+
+rec:aponta
+  skos:broadMatch <https://schema.followthemoney.tech/#Control:controller> .
+
+rec:avalia
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/evaluates> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/evaluates> .
+
+rec:avaliadaPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isEvaluatedBy> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isEvaluatedBy> .
+
+rec:beneficia_Contrato
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasBeneficiary> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasBeneficiary> .
+
+rec:beneficia_Destinacao
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasBeneficiary> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasBeneficiary> .
+
+rec:beneficia_RestricaoOuOnusSobreBem
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isConferredOn> .
+
+rec:compostoPor_ExtratoDeMovimentacaoFinanceira
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/recordsTransaction> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/recordsTransaction> .
+
+rec:comprovadaPor
+  skos:closeMatch <http://www.w3.org/ns/prov#hadPrimarySource> .
+
+rec:concedidoPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy> .
+
+rec:congrega
+  rdfs:subPropertyOf <http://www.w3.org/ns/org#hasMember> ;
+  skos:exactMatch <http://www.w3.org/ns/org#hasMember> .
+
+rec:contem
+  skos:closeMatch <http://www.w3.org/ns/prov#hadMember> .
+
+rec:custodiadoPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isHeldBy> .
+
+rec:custodiadoPor_AtivoFinanceiro
+  skos:closeMatch <https://schema.followthemoney.tech/#BankAccount:bank> .
+
+rec:decididaPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> .
+
+rec:declaradaPor
+  skos:exactMatch <https://schema.followthemoney.tech/#TaxRoll:taxee> ;
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:decorreDe_RestricaoOuOnusSobreBem
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isConferredBy> .
+
+rec:deduzidaPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:deduzidoPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:define
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/mandates> .
+
+rec:descreve_DossieDeBuscaPatrimonial
+  rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/topic> .
+
+rec:descreve_MatriculaImobiliaria
+  rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/primaryTopic> .
+
+rec:designadaPor
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/hasPersonName> .
+
+rec:determina_DecisaoJudicial_Destinacao
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/mandates> .
+
+rec:determina_DecisaoJudicial_ValorEconomicoDeAtivo
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> .
+
+rec:determina_DecisaoJudicial_MedidaJudicialSobreAtivo
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/mandates> .
+
+rec:determina_InstrumentoJuridicoDeCooperacao
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/mandates> .
+
+rec:determina_MedidaDeConstricao
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> .
+
+rec:dirigidaA
+  skos:exactMatch <https://schema.followthemoney.tech/#Message:recipients> .
+
+rec:eCompostoPor_InstrumentoJuridicoDeCooperacao
+  skos:closeMatch <http://www.w3.org/ns/prov#hadMember> .
+
+rec:eConduzidoPor
+  skos:exactMatch <https://schema.followthemoney.tech/#CourtCase:court> .
+
+rec:emitidoPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy> .
+
+rec:emitidoPor_Documento
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:emitidoPor_ValorMobiliario
+  skos:exactMatch <https://schema.followthemoney.tech/#Security:issuer> .
+
+rec:enviadaPor
+  skos:exactMatch <https://schema.followthemoney.tech/#Message:sender> ;
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:evidencia_LancamentoFinanceiro
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidenceFor> .
+
+rec:evidenciadoPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidencedBy> .
+
+rec:executadaPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> .
+
+rec:exige
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isPredicatedOn> ;
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> .
+
+rec:extraidoDe
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+  skos:exactMatch <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+rec:fundamenta_IndicioPatrimonial
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidenceFor> .
+
+rec:fundamentaSeEm_MedidaJudicialSobreAtivo
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isPredicatedOn> .
+
+rec:fundamentaSeEm_PedidoDeCooperacaoJuridicaInternacional
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isPredicatedOn> .
+
+rec:fundamentaSeEm_PrazoDeResposta
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isPredicatedOn> .
+
+rec:fundamentaSeEm_Repatriacao
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isPredicatedOn> .
+
+rec:fundamentadoEm
+  skos:closeMatch <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+rec:habilita_DecretoDePerdimento
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/causes> .
+
+rec:identificadaPor
+  skos:closeMatch <https://schema.followthemoney.tech/#Identification:holder> ;
+  skos:closeMatch <http://www.w3.org/ns/regorg#registration> .
+
+rec:impoe
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/mandates> .
+
+rec:incideSobre_Alegacao
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/involves> .
+
+rec:indica
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> .
+
+rec:instrui
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidenceFor> .
+
+rec:instruidoPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidencedBy> .
+
+rec:instrumentalizadoPor_AtoRegistral
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidencedBy> .
+
+rec:instrumentalizadoPor_Contrato
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidencedBy> .
+
+rec:integra
+  rdfs:subPropertyOf <http://www.w3.org/ns/org#unitOf> ;
+  skos:exactMatch <http://www.w3.org/ns/org#unitOf> .
+
+rec:lavradoPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:ligaAtivo
+  skos:broadMatch <https://schema.followthemoney.tech/#Ownership:asset> .
+
+rec:ligaTitular
+  skos:broadMatch <https://schema.followthemoney.tech/#Ownership:owner> .
+
+rec:operadoPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:pertenceA
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isInstrumentOf> .
+
+rec:praticadoPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAttributedTo> .
+
+rec:produz_AtoRegistral
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/produces> .
+
+rec:produz_AvaliacaoPatrimonial
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> .
+
+rec:produz_InstituicaoFinanceira
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/issues> .
+
+rec:produz_Repatriacao
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> .
+
+rec:produz_RespostaDeCooperacao
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> .
+
+rec:produz_UnidadeDeBuscaPatrimonial
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/produces> .
+
+rec:produz_UnidadeDeInteligenciaFinanceira
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/produces> .
+
+rec:profere
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/issues> .
+
+rec:realizadaPor
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> .
+
+rec:realizadaSobre
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> .
+
+rec:recaiSobre
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/involves> .
+
+rec:refereSeA_Contrato
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/definesTermsFor> .
+
+rec:refereSeA_ExtratoDeMovimentacaoFinanceira
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/appliesToAccount> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/appliesToAccount> .
+
+rec:refereSeA_PedidoDeCooperacaoJuridicaInternacional
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/involves> .
+
+rec:referencia
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/involves> .
+
+rec:regidoPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasGoverningJurisdiction> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasGoverningJurisdiction> .
+
+rec:sanciona
+  skos:broadMatch <https://schema.followthemoney.tech/#Sanction:entity> .
+
+rec:sujeitoA
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasTerm> .
+
+rec:sustenta
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidenceFor> .
+
+rec:sustentadaPor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidencedBy> .
+
+rec:temAlvo_DossieDeBuscaPatrimonial
+  rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/primaryTopic> ;
+  skos:exactMatch <http://xmlns.com/foaf/0.1/primaryTopic> .
+
+rec:temCodigoPostal
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasIndividualPostcode> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasIndividualPostcode> .
+
+rec:temContraparte
+  skos:closeMatch <https://schema.followthemoney.tech/#Payment:beneficiary> ;
+  skos:closeMatch <https://schema.followthemoney.tech/#Payment:payer> .
+
+rec:temCredor
+  skos:broadMatch <https://schema.followthemoney.tech/#Debt:creditor> .
+
+rec:temDestino_SucessaoDeEntidade
+  skos:closeMatch <https://schema.followthemoney.tech/#Succession:successor> ;
+  rdfs:subPropertyOf <http://www.w3.org/ns/org#resultingOrganization> .
+
+rec:temDestino_VinculoEntrePessoas
+  skos:broadMatch <https://schema.followthemoney.tech/#Associate:associate> ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Family:relative> .
+
+rec:temDevedor
+  skos:broadMatch <https://schema.followthemoney.tech/#Debt:debtor> .
+
+rec:temEndereco_BemImovel
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddress> ;
+  skos:exactMatch <https://schema.followthemoney.tech/#Thing:address> .
+
+rec:temEndereco_PessoaFisica
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddress> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddress> ;
+  skos:closeMatch <https://schema.org/address> .
+
+rec:temEndereco_PessoaJuridica
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddress> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddress> ;
+  skos:closeMatch <https://schema.org/address> .
+
+rec:temEndereco_RegistroDeIdentificacaoDeCliente
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddress> .
+
+rec:temOrigem_SucessaoDeEntidade
+  skos:closeMatch <https://schema.followthemoney.tech/#Succession:predecessor> ;
+  rdfs:subPropertyOf <http://www.w3.org/ns/org#originalOrganization> .
+
+rec:temOrigem_VinculoEntrePessoas
+  skos:broadMatch <https://schema.followthemoney.tech/#Associate:person> ;
+  skos:broadMatch <https://schema.followthemoney.tech/#Family:person> .
+
+rec:temParte_AtoNotarialOuRegistral
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty> .
+
+rec:temParte_Contrato
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty> .
+
+rec:temParte_ProcessoJudicial
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): isInvolvedIn" ;
+  skos:closeMatch <https://schema.followthemoney.tech/#CourtCaseParty:party> .
+
+rec:temParticipante
+  skos:broadMatch <https://schema.followthemoney.tech/#CourtCaseParty:party> .
+
+rec:temProcesso
+  skos:exactMatch <https://schema.followthemoney.tech/#CourtCaseParty:case> .
+
+rec:temSociedade
+  skos:broadMatch <https://schema.followthemoney.tech/#Ownership:asset> ;
+  skos:closeMatch <http://www.w3.org/ns/org#organization> .
+
+rec:temSocio
+  skos:broadMatch <https://schema.followthemoney.tech/#Ownership:owner> ;
+  skos:closeMatch <http://www.w3.org/ns/org#member> .
+
+rec:temValor
+  rdfs:subPropertyOf <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> ;
+  skos:exactMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount> .
+
+rec:titularDe
+  rec:origemDeDesenho "Asset Concealment Ontology (TORRES et al., 2024): own" ;
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/holds> .
+
+rec:utiliza_AnaliseDeCompatibilidadeEconomica_DeclaracaoFiscalDeRendaEPatrimonio
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+  skos:exactMatch <http://www.w3.org/ns/prov#used> .
+
+rec:utiliza_AnaliseDeCompatibilidadeEconomica_ExtratoDeMovimentacaoFinanceira
+  rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+  skos:exactMatch <http://www.w3.org/ns/prov#used> .
+
+rec:vincula
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty> .
+
+rec:vinculaSeA
+  skos:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/relatesTo> .
+

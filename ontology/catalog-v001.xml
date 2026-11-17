@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri id="ontologia.ttl" name="https://www.latitude.unb.br/ontologia/recuperacao-ativos" uri="ontologia.ttl"/>
+  <uri id="ontologia-alinhamentos.ttl" name="https://www.latitude.unb.br/ontologia/recuperacao-ativos-alinhamentos" uri="ontologia-alinhamentos.ttl"/>
+</catalog>

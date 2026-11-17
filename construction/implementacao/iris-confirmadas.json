@@ -1,0 +1,1928 @@
+[
+  {
+    "ontologia": "FIBO",
+    "termo": "person",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "financial institution",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "identity document",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "person name",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PersonName",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "financial instrument",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "account",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/Account",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "monetary amount",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "exchange rate",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/ExchangeRate",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "physical address",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PhysicalAddress",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "postcode",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Postcode",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "account statement",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountStatement",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "individual transaction",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/IndividualTransaction",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "claim",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Claim",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "regulation",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/Regulation",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "polity",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/Polity",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "judiciary",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/Judiciary",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "business registration authority",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/BusinessRegistrationAuthority",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "contract",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Contract",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "security",
+    "tipo": "class",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "holds",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/holds",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is held by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isHeldBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is evidenced by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidencedBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is evidence for",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isEvidenceFor",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has address",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddress",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has residence",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/hasResidence",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has individual postcode",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasIndividualPostcode",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has postal code",
+    "tipo": "dataProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is an instrument of",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isInstrumentOf",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "applies to account",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/appliesToAccount",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "records transaction",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/recordsTransaction",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "issues",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/issues",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is issued by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has monetary amount",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has contract party",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has beneficiary",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasBeneficiary",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is beneficiary of",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isBeneficiaryOf",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has governing jurisdiction",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasGoverningJurisdiction",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "defines terms for",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/definesTermsFor",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "evaluates",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/evaluates",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is evaluated by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isEvaluatedBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is predicated on",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isPredicatedOn",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "mandates",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/mandates",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is mandated by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isMandatedBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "causes",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/causes",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is caused by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isCausedBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "authorizes",
+    "tipo": "objectProperty",
+    "iri": "https://www.omg.org/spec/Commons/BusinessAuthorizations/authorizes",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": "termo definido no OMG Commons (importado pela FIBO), nao no namespace FIBO | definicao: endorses, enables, empowers, or gives permission to"
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "isAuthorizedBy",
+    "tipo": "objectProperty",
+    "iri": "https://www.omg.org/spec/Commons/BusinessAuthorizations/isAuthorizedBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": "termo definido no OMG Commons (importado pela FIBO), nao no namespace FIBO | definicao: is endorsed, enabled, empowered, or otherwise permitted by"
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "facilitates",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/facilitates",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is conferred on",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/isConferredOn",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is conferred by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isConferredBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "controls",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/controls",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "is controlled by",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isControlledBy",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has shareholder",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasShareholder",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "holds shares in",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/holdsSharesIn",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has person name",
+    "tipo": "dataProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/hasPersonName",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": "DataProperty (literal) — nao aponta para a classe person name; corrigir 02 (secao 2.C)"
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has alias",
+    "tipo": "dataProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasAlias",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "was formerly known as",
+    "tipo": "dataProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/wasFormerlyKnownAs",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "involves",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/involves",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "relates to",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/relatesTo",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "produces",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/produces",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has principal managing party",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/hasPrincipalManagingParty",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "designates signatory",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/designatesSignatory",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FIBO",
+    "termo": "has term",
+    "tipo": "objectProperty",
+    "iri": "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasTerm",
+    "evidencia": "https://spec.edmcouncil.org/fibo/ontology/master/latest/prod.fibo-quickstart.ttl (rdfs:label match, rdflib)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "Organization",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#Organization",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "FormalOrganization",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#FormalOrganization",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "OrganizationalUnit",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#OrganizationalUnit",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "OrganizationalCollaboration",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#OrganizationalCollaboration",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "Membership",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#Membership",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "ChangeEvent",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#ChangeEvent",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "Role",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#Role",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "Post",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#Post",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "Site",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/org#Site",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "hasMember",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#hasMember",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "memberOf",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#memberOf",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "subOrganizationOf",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#subOrganizationOf",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "hasSubOrganization",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#hasSubOrganization",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "hasUnit",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#hasUnit",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "unitOf",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#unitOf",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "hasSite",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#hasSite",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "siteAddress",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#siteAddress",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "hasRegisteredSite",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#hasRegisteredSite",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "originalOrganization",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#originalOrganization",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "resultingOrganization",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#resultingOrganization",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "changedBy",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#changedBy",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "resultedFrom",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#resultedFrom",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "member",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#member",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "organization",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#organization",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "role",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#role",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "ORG",
+    "termo": "hasMembership",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/org#hasMembership",
+    "evidencia": "http://www.w3.org/ns/org (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "REGORG",
+    "termo": "RegisteredOrganization",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/regorg#RegisteredOrganization",
+    "evidencia": "http://www.w3.org/ns/regorg (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "REGORG",
+    "termo": "legalName",
+    "tipo": "dataProperty",
+    "iri": "http://www.w3.org/ns/regorg#legalName",
+    "evidencia": "http://www.w3.org/ns/regorg (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "REGORG",
+    "termo": "registration",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/regorg#registration",
+    "evidencia": "http://www.w3.org/ns/regorg (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "REGORG",
+    "termo": "orgStatus",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/regorg#orgStatus",
+    "evidencia": "http://www.w3.org/ns/regorg (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "REGORG",
+    "termo": "orgActivity",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/regorg#orgActivity",
+    "evidencia": "http://www.w3.org/ns/regorg (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "REGORG",
+    "termo": "orgType",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/regorg#orgType",
+    "evidencia": "http://www.w3.org/ns/regorg (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "Agent",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/prov#Agent",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "Person",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/prov#Person",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "Organization",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/prov#Organization",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "SoftwareAgent",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/prov#SoftwareAgent",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "Activity",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/prov#Activity",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "Entity",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/prov#Entity",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "Collection",
+    "tipo": "class",
+    "iri": "http://www.w3.org/ns/prov#Collection",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "wasDerivedFrom",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "used",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#used",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "wasGeneratedBy",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "wasAttributedTo",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#wasAttributedTo",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "wasAssociatedWith",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "actedOnBehalfOf",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#actedOnBehalfOf",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "hadPrimarySource",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#hadPrimarySource",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "hadMember",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#hadMember",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "wasInformedBy",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#wasInformedBy",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "atLocation",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#atLocation",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "qualifiedAttribution",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#qualifiedAttribution",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "qualifiedAssociation",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#qualifiedAssociation",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "PROV-O",
+    "termo": "hadRole",
+    "tipo": "objectProperty",
+    "iri": "http://www.w3.org/ns/prov#hadRole",
+    "evidencia": "http://www.w3.org/ns/prov (text/turtle)",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "Agent",
+    "tipo": "class",
+    "iri": "http://xmlns.com/foaf/0.1/Agent",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "Person",
+    "tipo": "class",
+    "iri": "http://xmlns.com/foaf/0.1/Person",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "Organization",
+    "tipo": "class",
+    "iri": "http://xmlns.com/foaf/0.1/Organization",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "Group",
+    "tipo": "class",
+    "iri": "http://xmlns.com/foaf/0.1/Group",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "knows",
+    "tipo": "objectProperty",
+    "iri": "http://xmlns.com/foaf/0.1/knows",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "member",
+    "tipo": "objectProperty",
+    "iri": "http://xmlns.com/foaf/0.1/member",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "name",
+    "tipo": "dataProperty",
+    "iri": "http://xmlns.com/foaf/0.1/name",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "nick",
+    "tipo": "dataProperty",
+    "iri": "http://xmlns.com/foaf/0.1/nick",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "primaryTopic",
+    "tipo": "objectProperty",
+    "iri": "http://xmlns.com/foaf/0.1/primaryTopic",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "isPrimaryTopicOf",
+    "tipo": "rdfProperty",
+    "iri": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "topic",
+    "tipo": "objectProperty",
+    "iri": "http://xmlns.com/foaf/0.1/topic",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "maker",
+    "tipo": "objectProperty",
+    "iri": "http://xmlns.com/foaf/0.1/maker",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "made",
+    "tipo": "objectProperty",
+    "iri": "http://xmlns.com/foaf/0.1/made",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FOAF",
+    "termo": "based_near",
+    "tipo": "objectProperty",
+    "iri": "http://xmlns.com/foaf/0.1/based_near",
+    "evidencia": "http://xmlns.com/foaf/spec/index.rdf",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "Person",
+    "tipo": "class",
+    "iri": "https://schema.org/Person",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "Organization",
+    "tipo": "class",
+    "iri": "https://schema.org/Organization",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "PostalAddress",
+    "tipo": "class",
+    "iri": "https://schema.org/PostalAddress",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "MonetaryAmount",
+    "tipo": "class",
+    "iri": "https://schema.org/MonetaryAmount",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "knows",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/knows",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "relatedTo",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/relatedTo",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "spouse",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/spouse",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "parent",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/parent",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "children",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/children",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "sibling",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/sibling",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "memberOf",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/memberOf",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "member",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/member",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "address",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/address",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "postalCode",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/postalCode",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "addressLocality",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/addressLocality",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "addressRegion",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/addressRegion",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "addressCountry",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/addressCountry",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "identifier",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/identifier",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "legalName",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/legalName",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "parentOrganization",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/parentOrganization",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "schema",
+    "termo": "subOrganization",
+    "tipo": "rdfProperty",
+    "iri": "https://schema.org/subOrganization",
+    "evidencia": "https://schema.org/version/latest/schemaorg-current-https.ttl",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "LegalEntity",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#LegalEntity",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/LegalEntity.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Thing"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Person",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Person",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Person.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: LegalEntity"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Company",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Company",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Company.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Organization, Asset"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "PublicBody",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#PublicBody",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/PublicBody.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Organization"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Identification",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Identification",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Identification.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Family",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Family",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Family.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Associate",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Associate",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Associate.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Ownership",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Ownership",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Ownership.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interest"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Control",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Control",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Control.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interest"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "TaxRoll",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#TaxRoll",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/TaxRoll.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Asset",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Asset",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Asset.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Thing, Value"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "RealEstate",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#RealEstate",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/RealEstate.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Asset"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Vehicle",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Vehicle",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Vehicle.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Asset"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Airplane",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Airplane",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Airplane.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Vehicle"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Vessel",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Vessel",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Vessel.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Vehicle"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "BankAccount",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#BankAccount",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/BankAccount.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Asset"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "CryptoWallet",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#CryptoWallet",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/CryptoWallet.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Thing, Value"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Security",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Security",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Security.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Asset"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Payment",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Payment",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Payment.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval, Value"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Risk",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Risk",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Risk.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "CourtCase",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#CourtCase",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/CourtCase.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Thing"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Document",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Document",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Document.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Thing, Analyzable"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Message",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Message",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Message.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval, Folder, PlainText, HyperText"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Territory",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Territory",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Territory.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Thing"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Debt",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Debt",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Debt.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval, Value"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Contract",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Contract",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Contract.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Asset"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Succession",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Succession",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Succession.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interest"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Sanction",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Sanction",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Sanction.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interval"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Documentation",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Documentation",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Documentation.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interest"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "CourtCaseParty",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#CourtCaseParty",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/CourtCaseParty.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interest"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Directorship",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Directorship",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Directorship.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interest"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Representation",
+    "tipo": "class",
+    "iri": "https://schema.followthemoney.tech/#Representation",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Representation.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "extends: Interest"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Ownership.owner",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Ownership:owner",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Ownership.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: ownershipOwner"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Ownership.asset",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Ownership:asset",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Ownership.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Asset; reverse: ownershipAsset"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Control.holder",
+    "tipo": "?",
+    "iri": null,
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Control.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "nao_encontrada",
+    "nota": "propriedade \"holder\" nao existe em Control (v4.11.0). Propriedades de Control: alephUrl, controlType, controlled, controller, date, description, endDate, indexText, legalBasis, modifiedAt, namesMentioned, proof, publisher, publisherUrl, recordId, retrievedAt, role, sourceUrl, startDate, status, summary"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Control.assets",
+    "tipo": "?",
+    "iri": null,
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Control.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "nao_encontrada",
+    "nota": "propriedade \"assets\" nao existe em Control (v4.11.0). Propriedades de Control: alephUrl, controlType, controlled, controller, date, description, endDate, indexText, legalBasis, modifiedAt, namesMentioned, proof, publisher, publisherUrl, recordId, retrievedAt, role, sourceUrl, startDate, status, summary"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Family.person",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Family:person",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Family.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Person; reverse: familyPerson"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Family.relative",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Family:relative",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Family.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Person; reverse: familyRelative"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Associate.person",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Associate:person",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Associate.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Person; reverse: associates"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Associate.associate",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Associate:associate",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Associate.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Person; reverse: associations"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Succession.predecessor",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Succession:predecessor",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Succession.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: successors"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Succession.successor",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Succession:successor",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Succession.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: predecessors"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Debt.creditor",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Debt:creditor",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Debt.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: debtCreditor"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Debt.debtor",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Debt:debtor",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Debt.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: debtDebtor"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Sanction.entity",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Sanction:entity",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Sanction.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Thing; reverse: sanctions"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Identification.holder",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Identification:holder",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Identification.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: identification"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "TaxRoll.taxee",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#TaxRoll:taxee",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/TaxRoll.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: taxRolls"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "BankAccount.bank",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#BankAccount:bank",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/BankAccount.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Organization; reverse: bankAccounts"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Security.issuer",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Security:issuer",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Security.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: securities"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "CourtCase.court",
+    "tipo": "dataProperty",
+    "iri": "https://schema.followthemoney.tech/#CourtCase:court",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/CourtCase.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "CourtCaseParty.party",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#CourtCaseParty:party",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/CourtCaseParty.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Thing; reverse: courtCase"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "CourtCaseParty.case",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#CourtCaseParty:case",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/CourtCaseParty.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: CourtCase; reverse: parties"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Message.sender",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Message:sender",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Message.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: messagesSent"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Message.recipients",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Message:recipients",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Message.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: messagesReceived"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Documentation.entity",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Documentation:entity",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Documentation.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Thing; reverse: documentedBy"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Documentation.document",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Documentation:document",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Documentation.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Document; reverse: relatedEntities"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "RealEstate.address",
+    "tipo": "dataProperty",
+    "iri": "https://schema.followthemoney.tech/#Thing:address",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Thing.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "definida em Thing (qname Thing:address), herdada por RealEstate"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "LegalEntity.address",
+    "tipo": "dataProperty",
+    "iri": "https://schema.followthemoney.tech/#Thing:address",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Thing.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "definida em Thing (qname Thing:address), herdada por LegalEntity"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Payment.payer",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Payment:payer",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Payment.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: paymentPayer"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Payment.beneficiary",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Payment:beneficiary",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Payment.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: LegalEntity; reverse: paymentBeneficiary"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Thing.alias",
+    "tipo": "dataProperty",
+    "iri": "https://schema.followthemoney.tech/#Thing:alias",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Thing.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": ""
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Thing.proof",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Thing:proof",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Thing.yaml (namespace: followthemoney/ontology.py@v4.11.0 NS = \"https://schema.followthemoney.tech/#\")",
+    "status": "confirmada",
+    "nota": "range: Document; reverse: proven"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Control.controller",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Control:controller",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Control.yaml",
+    "status": "confirmada",
+    "nota": "ponta real de Control (substitui holder/assets, que nao existem); edge: controller --controls--> controlled"
+  },
+  {
+    "ontologia": "FTM",
+    "termo": "Control.controlled",
+    "tipo": "objectProperty",
+    "iri": "https://schema.followthemoney.tech/#Control:controlled",
+    "evidencia": "https://github.com/opensanctions/followthemoney/blob/v4.11.0/followthemoney/schema/Control.yaml",
+    "status": "confirmada",
+    "nota": "ponta real de Control (substitui holder/assets, que nao existem); edge: controller --controls--> controlled"
+  }
+]

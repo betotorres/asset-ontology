@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this ontology or its construction record, please cite it as below."
+title: "REC — Asset Recovery Ontology and its construction record"
+version: "0.2.0"
+date-released: "2026-11-17"
+type: dataset
+authors:
+  - family-names: "Torres"
+    given-names: "José Alberto Sousa"
+    affiliation: "University of Brasília"
+repository-code: "https://github.com/betotorres/asset-ontology"
+license: CC-BY-4.0
+keywords:
+  - ontology
+  - asset recovery
+  - knowledge graph
+  - provenance
+  - large language models
